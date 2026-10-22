@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="test/test.csproj" />
+  <Project Path="TestoweTestowanie/TestoweTestowanie.csproj" Id="bf8fb8cf-a22c-4964-9ce2-f686dcdcd616" />
+</Solution>
