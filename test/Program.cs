@@ -10,6 +10,13 @@ namespace LoteriaLiczbowa
 
     {
 
+        public static int Losuj()
+        {
+            Random random = new Random();
+
+            return random.Next(-7,7);
+        }
+
         public static int Dodaj(int a ,int b)
         {
             return (a + b);
@@ -87,7 +94,10 @@ namespace LoteriaLiczbowa
         static void Main()
 
         {
-
+            for(int i = 0; i < 100; i++)
+            {
+                Console.WriteLine(Losuj());
+            }
             
 
         }

@@ -3,7 +3,7 @@ namespace LoteriaLiczbowa
 {
     public class UnitTest1
     {
-
+        
         [Fact]
         public void CzyDodatnia_Liczba_ZwracaTrueFalse()
         {
@@ -123,6 +123,7 @@ namespace LoteriaLiczbowa
             Assert.Equal(oczekiwana, wynik);
         }
 
+        
 
     }
 }
