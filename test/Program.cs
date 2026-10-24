@@ -10,6 +10,40 @@ namespace LoteriaLiczbowa
 
     {
 
+        
+            public static decimal Wplac(decimal saldo, decimal kwota)
+
+            {
+
+                if (kwota <= 0)
+
+                {
+
+                    throw new ArgumentException("Kwota wpłaty musi być dodatnia.");
+
+                }
+
+                return saldo + kwota;
+
+            }
+
+
+        public static bool CzyPoprawneHaslo(string haslo)
+
+        {
+
+            if (string.IsNullOrEmpty(haslo))
+
+            {
+
+                return false;
+
+            }
+
+            return haslo.Length >= 8 && haslo.Length <= 20;
+
+        }
+
         public static int Losuj()
         {
             Random random = new Random();
@@ -94,10 +128,7 @@ namespace LoteriaLiczbowa
         static void Main()
 
         {
-            for(int i = 0; i < 100; i++)
-            {
-                Console.WriteLine(Losuj());
-            }
+            
             
 
         }
